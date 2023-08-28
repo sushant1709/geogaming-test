@@ -9,16 +9,18 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import java.io.IOException;
 import java.time.Duration;
 
-public class DriverManage {
+public class DriverManager {
 
     private static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
 
     public WebDriver getDriver() {
         return driver.get();
     }
+
     public void setDriver(WebDriver driver1) {
         driver.set(driver1);
     }
+
     public void initializeDriver() throws Exception {
         WebDriver driver = null;
         GlobalParams params = new GlobalParams();

@@ -13,13 +13,12 @@ public class GlobalParams {
     }
 
 
-    public void initializeGlobalParams(){
+    public void initializeGlobalParams() {
 
         GlobalParams params = new GlobalParams();
-        params.setBrowserName(System.getProperty("BrowserName","Chrome"));
+        params.setBrowserName(System.getProperty("BrowserName", "Chrome"));
 
     }
-
 
 
 }
