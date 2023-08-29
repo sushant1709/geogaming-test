@@ -33,7 +33,7 @@ public class BasePage {
     }
     public void Sleep(int sec) {
         try {
-            Thread.sleep(1000 * sec);
+            Thread.sleep(1000L * sec);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }

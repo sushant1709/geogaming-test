@@ -153,7 +153,7 @@ public class GeoGamingPage extends BasePage {
     }
 
     public void clickOnFirstLiveMatchTeam1BetAndSetValues() {
-        setLabel_FirstLiveRowTeam1Bet_text(Double.valueOf(getText(label_FirstLiveRowTeam1Bet)));
+        setLabel_FirstLiveRowTeam1Bet_text(Double.parseDouble(getText(label_FirstLiveRowTeam1Bet)));
         click(label_FirstLiveRowTeam1Bet);
 
     }
@@ -174,7 +174,7 @@ public class GeoGamingPage extends BasePage {
 
     public void getBetSlipTeam1BetPrice(){
 
-        setLabel_BetSlipTeam1Price_text(Double.valueOf(getText(label_BetSlipTeam1Price)));
+        setLabel_BetSlipTeam1Price_text(Double.parseDouble(getText(label_BetSlipTeam1Price)));
 
     }
 
